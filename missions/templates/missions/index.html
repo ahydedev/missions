@@ -1,0 +1,365 @@
+{% extends "missions/layout.html" %}
+{% load static %}
+
+{% block body %}
+
+<div class="page-loader">
+    <div class="loading-image-container">
+        <img id="olympic-rings-loading" src="{% static 'missions/olympic_rings_loading.gif' %}" alt="Olympic Rings Page Loading Image">
+        <h4 class="centered">LOADING</h4>
+    </div>
+</div>
+
+<div id="welcome-view">
+
+    <div class="section-image img-container">
+        <video class="image" autoplay muted loop>
+            <source src="{% static 'missions/swim.mp4' %}" type="video/mp4">
+        </video>
+        <div class="image-text">
+            <h1>Become an Olympic Hero</h1>
+        </div>
+    </div>
+
+    <h5 class="intro-text-title centered">Paris needs 45,000 volunteers to deliver the greatest sporting event on Earth</h5>
+    <section id="welcome">
+        <div id="intro-text">
+            <img id="volunteer-logo" src="{% static 'missions/paris_2024_volontaire.png' %}" alt="Volunteer Logo">
+            <p>The 2024 Olympic Games will take place in Paris and supporting cities between 26 July and 11 August 2024, with the 2024 Paralympic Games taking place between 28 August and 8 September 2024.</p> 
+            <p>Some 15,000 athletes are expected to compete, and millions of spectators will gather in over 40 competition sites to witness first-hand a sporting event the likes of which the world has never seen before.</p>
+            <P>As a volunteer, you can be part of a unique team adventure at the heart of these events, making new connections with people from around the world and helping to make Paris 2024 an unforgettable event.</p> 
+            <p><b>Be more than a spectator, be part of the Games!</b></p>
+        </div>
+    </section>
+
+    <div class="img-container">
+        <img class="image" src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/IV43REWJLBIPNAKR7LCGEYXOFE.jpg" alt="Paris 2024 Venues Image">
+    </div>
+
+    <section id="opportunity" class="centered">
+        <h4>A game-changing opportunity</h4>    
+        <p>As an Olympic volunteer you'll be at the heart of the organisation of the greatest sporting event on the planet and directly contributing to its success. You'll welcome the whole world, embodying the hospitality of France and the team spirit of the Games, and sharing unique moments in a truly intercultural exchange.</p>
+        <p>Volunteer missions will take place in over 40 Olympic venues, including in Paris and Île-de-France (Paris region), Marseille, Lille, Nice, Lyon, Saint-Etienne, Nantes, Bordeaux, Châteauroux and Tahiti. They will also take place in other key locations such as the Media Centre, Athletes' Village, training facilities, train stations and airports.</p>
+        <p>Placements are flexible with time commitments from 1 week to 4 weeks in duration. Each placement offers a unique opportunity to connect with brilliant people who have a passion for sport, and to learn, train and gain experience that may be useful for your future career plans.</p>
+        <p>As a volunteer you'll also enjoy free tickets to the Games, an official Olympic uniform and access to discounts on accommodation.</p>
+    </section>
+
+    <div class="section-image img-container">
+        <video class="image" autoplay muted loop>
+            <source src="{% static 'missions/curling.mp4' %}" type="video/mp4">
+        </video>
+        <div class="image-text">
+            <h1>Missions</h1>
+        </div>
+    </div>
+
+    <section id="missions" class="centered">
+        <h4 class="find-mission">Find the perfect mission</h4>
+        <p>Three types of missions will be assigned to volunteers. The first is focused on delivering a quality experience to participants at the Games, including spectators, athletes, sport delegations and journalists. Volunteers will welcome, guide, inform, transport and assist them during their mission period.</p>
+        <p>The second is focused on sporting performance. These volunteers will support the athletes in the competition area by helping them to install starting blocks, look after the belongings of swimmers, retrieve tennis balls, and more. They will also help with tasks such as the measuring of timings and statistics, and supporting the medical staff in the Athletes' village and in the competition/training areas.</p> 
+        <p>The final missions will be focused on organisation, with tasks that may include assisting with the accreditation process, or distributing and installing equipment. You'll be supported with virtual and face-to-face training and orientation in advance of the events.</p> 
+        <br>
+        <h5 class="how-to-apply">How to apply</h5>
+        <p>You can <span id="show-missions">view all current opportunities</span> and apply for your preferred mission(s) via the Opportunities page. Recruitment is now live for the July 2024 Paris Olympics and opportunities for the September 2024 Paralympic Games will be posted from June 2023.</p> 
+        <p>You'll need to fill in a short form outlining your interest in the placement and providing any appropriate details regarding your skill set and/or experience. To help us to identify a suitable placement, you will also be asked to confirm your avaiability and the location(s) at which you are able to serve as a volunteer.</p>
+        <p>The responsible Mission Manager will review your application and contact you within 60 days with an update on your application. If you are selected to support the Games, you will be provided with follow up guidance and preparatory support.</p>
+        <p>Volunteers will need to be 18 years old on or before 1 January 2024, and speak either French or English. Missions will last at least ten days and will take place between July and September 2024. Volunteers can be citizens of any country in the world.</p>
+    </section>
+
+    <section id="testimonies" class="centered">
+        <h4>Testimonies</h4>
+        <p>Learn about some of the first-hand experiences of volunteers who have been involved with previous editions of the Games.</p> 
+        <div id="carousel-with-controls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption">
+                  <p class="story">"I still wear my volunteer uniform to this day and people are super excited when they see it and ask me about the Games. It was such a rich experience that included meeting new people, learning how a major event is organised, how to handle differences and realising how important accessibility is. I'm so proud to be part of the Olympic family"</p>
+                  <p class="storyteller">Volunteer at Rio 2016</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <p class="story">"There were 10,000 of us who were volunteer performers at the London 2012 Opening Ceremony and it will forever make me smile that no details were leaked despite immense curiosity, particularly from national newspapers, of how the UK would be showcased to the world. More than 900 million viewers across the globe tuned in, with 80,000 people including the Queen in the stadium so it needed to be quite the show."</p>
+                  <p class="storyteller">Volunteer dancer at London 2012</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <p class="story">"Being a volunteer at the Olympics was one of the greatest experiences I've ever had. Looking at the Olympics from the inside, being part of what's happening backstage, having a closer look at how [the Games are] organised, the preparation, the emotion of the athletes... it's incredible. The Olympic feeling takes over the city, the barriers between countries fall. Everybody is excited because there is a common goal: the Olympics!"</p>
+                  <p class="storyteller">Volunteer at Rio 2016</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption">
+                  <p class="story">"I learned what it's like to be part of a mega event on the world level, a unique opportunity that opened up so many opportunities for me. I met people from all over the world and it enabled me to grow so much professionally and personally"</p>   
+                  <p class="storyteller">Volunteer at Rio 2016</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-with-controls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-with-controls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>    
+    </section>
+
+    <section>
+        <div id="mascots-img-container">
+            <img id="mascots-img" src="https://media3.giphy.com/media/xd9gIexjZKYpyZFv1A/giphy.gif" alt="Mascots">
+            <h4 id="countdown">COUNTDOWN TO THE GAMES</h4>
+            <span id="days" class="countdown-item"></span>
+            <span id="hours" class="countdown-item"></span>
+            <span id="minutes" class="countdown-item"></span>
+            <span id="seconds" class="countdown-item"></span>
+        </div>
+    </section>  
+
+    <section id="thank-you">
+        <div id="thank-you-text">
+            <h2>Thank you</h2>
+            <p><i>"The face, soul, heart and smile of the Games: This is who you are. The Games leave us with unforgettable memories, not only from the sporting side but also the human. Together, let's organise unique Games."</i></p>   
+            <p><b>Paris 2024 president Tony Estanguet</b></p>
+        </div>
+        <div id="tony-estanguet-img-container">
+            <img id="tony-estanguet-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tony_Estanguet_%C3%A0_la_Philharmonie_de_Paris.jpg/330px-Tony_Estanguet_%C3%A0_la_Philharmonie_de_Paris.jpg" alt="Tony Estanguet">
+        </div> 
+    </section>
+    
+    <section id="newsletter" class="centered">
+        <h5>Get the newsletter</h5>
+        <p>There will be lots of news and updates coming out, so sign up here to receive all of the latest information and news on the Paris 2024 volunteers programme!</p>
+        <form id="newsletter-form" class="form-inline">
+            <div class="newsletter-form-item">
+                <label for="first-name">
+                    First Name:
+                    <input type="text" class="form-control" id="first-name" placeholder="Olympic">
+                </label>
+            </div>
+            <div class="newsletter-form-item">
+                <label for="last-time" class="newsletter-form-item">
+                    Last Name:
+                    <input type="text" class="form-control" id="last-name" placeholder="Volunteer">
+                </label>
+            </div>
+            <div class="newsletter-form-item">
+                <label for="email" class="newsletter-form-item">
+                    Email Address:
+                    <input type="text" class="form-control" id="email" placeholder="Enter email">
+                </label>
+            </div>
+            <button id="sign-up-btn" class="btn btn-primary">Sign Up</button>
+        </form>    
+    </section>
+
+    <div class="img-container">
+        <img class="image" src="https://olympics.nbcsports.com/wp-content/uploads/sites/10/2022/10/4-THE-PYRO-SHOW-16.9.jpg" alt="">
+    </div>    
+
+</div>
+
+<div id="add-mission-view">
+
+    <section id="add-mission">
+
+        <h3 class="section-title">New Mission</h3>
+        <form id="add-mission-form">
+            <div class="form-group row">
+                <label for="title" class="col-sm-2 col-form-label">Role title:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label">Role description:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="description" name="description" rows="5" required></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="competition" class="col-sm-2 col-form-label">Competition:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="competition" name="competition" required>
+                        <option value="" disabled selected>Select competition</option>
+                        <option value="Olympic Games">Olympic Games</option>
+                        <option value="Paralympic Games">Paralympic Games</option>   
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="category" class="col-sm-2 col-form-label">Mission category:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="category" name="category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="Quality Experience">Quality Experience</option>
+                        <option value="Sporting Performance">Sporting Performance</option>
+                        <option value="Organisation">Organisation</option>   
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="all-locations" class="col-sm-2 col-form-label">Mission Locations:</label>
+                <div id="all-locations" class="form-check form-check-inline">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="duration" class="col-sm-2 col-form-label">Duration:</label>
+                <div class="col-sm-10">
+                    <input type="text" size="50" class="form-control" id="duration" name="duration" placeholder="e.g. 2 weeks" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="num-positions" class="col-sm-2 col-form-label">Number of positions:</label>
+                <div class="col-sm-3">
+                    <input type="number" min="1" class="form-control" id="num-positions" name="num-positions" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="all-skills" id="all-skills-label" class="col-sm-2 col-form-label">Skills required:</label>
+                <div id="all-skills" class="form-check form-check-inline">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="all-languages" id="all-languages-label" class="col-sm-2 col-form-label">Languages required:</label>
+                <div id="all-languages" class="form-check form-check-inline">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-2">Interview required:</div>    
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="interview" name="interview">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="app-deadline" class="col-sm-2 col-form-label">Application deadline:</label>
+                <div class="col-sm-10">
+                    <input type="date" size="50" class="form-control" id="app-deadline" name="app-deadline" placeholder="YYYY-MM-DD" required>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Post Mission</button>    
+        </form>
+            
+    </section>
+
+</div>
+
+<div id="opportunities-view" class="page-body">
+
+    <section id="opportunities-nav">
+        <h3 class="section-title">Current Opportunities</h3>
+        <div class="list-nav">
+            <div id="pagination">
+                <ul id="mission-pagination-links" class="pagination pagination-sm">
+                </ul>
+            </div>
+            <button id="missions-filter-btn" type="button" class="btn btn-link" data-view="opportunities">
+                <span id="filter-text">Filter</span> 
+                <span id="filter-icon" class="material-symbols-outlined">
+                    filter_list
+                </span>
+            </button>
+        </div>
+        <div id="filter-options">
+        </div>
+        
+    </section>
+
+    <section id="current-missions-list">
+    </section>
+
+</div>
+
+<div id="mission-view">
+    
+    <section id="mission-details" class="page-body">
+    </section>
+
+</div>
+
+<div id="apply-view">
+
+    <section id="application-form" class="page-body">
+    </section>
+
+</div>
+
+<div id="posts-view">
+
+    <section id="manager-posts-list">   
+    </section>
+
+</div>
+
+<div id="applications-view" class="page-body">
+
+    <section id="applications-nav">
+        <h3 class="section-title">Applications</h3>
+        <div class="list-nav">
+            <div id="apps-pagination">
+                <ul id="apps-pagination-links" class="pagination pagination-sm">
+                </ul>
+            </div>
+            <button id="apps-filter-btn" type="button" class="btn btn-link" data-view="applications">
+                <span id="apps-filter-text">Filter</span> 
+                <span id="apps-filter-icon" class="material-symbols-outlined">
+                    filter_list
+                </span>
+            </button>
+            <button id="apps-filter-reset-btn" type="button" class="btn btn-link" data-view="applications">
+                <span id="apps-filter-reset-text">Filter</span> 
+                <span id="apps-filter-reset-icon" class="material-symbols-outlined">
+                    filter_list_off
+                </span>
+            </button>
+        </div>
+        <div id="apps-filter-options">
+        </div>    
+    </section>
+
+    <section id="applications-list">
+    </section>
+        
+</div>
+
+<div id="application-view">
+
+    <section id="application-details" class="page-body">
+    </section>
+
+</div>
+
+<div id="update-profile-view">
+
+    <section id="profile-details" class="page-body">
+    </section>
+
+</div>
+
+<div id="notifications-view">
+
+    <section id="notifications-list">
+    </section>
+
+</div>
+
+<div id="my-missions-view" class="page-body">
+
+    <section id="my-missions-list">
+    </section>
+
+</div>  
+
+{% endblock %}
+
+{% block script %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'missions/script.js' %}" type="text/javascript"></script>     
+{% endblock %} 
+     

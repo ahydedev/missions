@@ -1,0 +1,869 @@
+/* Color palette: #1b1b1b (black), #003B55 (blue), #FCD066 (gold), #F6F1E9 (light grey), #009494 (green), #FFF2D1 (light gold), #8C9B95 (stone) */
+
+body {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    overscroll-behavior-y: contain;
+}
+
+.page-loader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    z-index: 9999;
+}
+
+.loading-image-container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#olympic-rings-loading {
+    width: 300px;
+    padding-right: 2rem;
+}
+
+.scroll-left {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    background: yellow;
+    color: black;
+}
+
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);    
+    animation: scroll-left 15s linear infinite;
+}
+
+nav {
+    background-color: black;
+    font-size: smaller;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle-label {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.nav-link {
+    display: inline-block;
+    color: white;
+    margin-bottom: 0;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    color:  #8C9B95;
+}
+
+#my-posts-link, #post-mission-link {
+    display: none;
+}
+
+.username {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.btn.btn-primary {
+    color: white;
+    background-color: #003B55;
+    border-color: #003B55;
+}
+
+.btn.btn-primary.view-mission-btn, .btn.btn-primary.view-my-app-btn, .btn.btn-primary.preview-apps-btn, .btn.btn-primary.view-app-btn {
+    color: white;
+}
+
+.btn.btn-primary.view-mission-btn:hover, .btn.btn-primary.view-my-app-btn:hover, .btn.btn-primary.preview-apps-btn:hover, .btn.btn-primary.view-app-btn:hover {
+    color: white;
+}
+
+#appoint, #reject, #prev-app, #next-app {
+    position: relative;
+    color: white;
+}
+
+#user-view-btn {
+    margin-left: 0;
+    border-radius: 5px;
+}
+
+.section-image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.img-container {
+    height: 500px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+section {
+    position: relative;
+    padding: 2rem 1rem 1.5rem 1rem;
+}
+
+section h1, h2, h3, h4, h5, h6, p {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.intro-text-title {
+    color: #003B55;
+    display: block;
+    padding-bottom: 0;
+    margin: 1.5rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+#welcome {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 2px solid #FCD066;
+    border-radius: 5px;
+    margin: 0 1.5rem 2.5rem 1.5rem;
+}
+
+#intro-text {
+    padding: 1.5rem 1rem 1rem 1rem;
+}
+
+#volunteer-logo {
+    float: right;
+    max-width: 200px;
+    padding: 0 0 1.5rem 1.5rem;
+}
+
+.find-mission {
+    color: #003B55; 
+}
+
+.how-to-apply {
+    color: #009494;
+}
+
+#show-missions {
+    color: #FCD066;
+    font-weight: bold;
+}
+
+.username:hover, #user-view-btn:hover, #show-missions:hover {
+    cursor: pointer;
+}
+
+#testimonies {
+    text-align: center;
+    background-color: #FCD066;
+}
+
+.carousel{
+    margin-top: 0;
+}
+
+.carousel-inner{
+    height: 10.5rem;
+}
+
+.carousel-caption{
+    color: black;
+    top: 50%;
+}
+
+.story {
+    font-style: italic;
+}
+
+.storyteller {
+    font-weight: bold;
+}
+
+#mascots-img-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#mascots-img {
+    width: 200px;
+    margin: auto;
+}
+
+#countdown {
+    padding: 1rem;
+}
+
+.countdown-item {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    border: 2px solid #FCD066;
+    border-radius: 5px;
+}
+
+#thank-you {
+    display: flex;
+    color: white;
+    background-color: #003B55;  
+    padding-bottom: 2rem;
+}
+
+#thank-you-text {
+    flex: 1 1 85%;
+    padding: 1rem;
+}
+
+#tony-estanguet-img-container {
+    flex: 0 1 15%;
+    max-width: 204px;
+    margin: 0rem 1rem 0rem 5rem;
+    border: 2px solid white;
+}
+
+#tony-estanguet-img {
+    max-width: 200px;
+}
+
+#newsletter {
+    padding-bottom: 1.5rem;
+}
+
+#newsletter-form {
+    margin: 1.5rem;
+    justify-content: center;
+}
+
+.form-inline * {
+    margin-left: 1rem;
+}
+
+.section-title {
+    margin-bottom: 1.5rem;
+}
+
+.page-body { 
+    position: relative;
+    min-height: 100vh;
+}
+
+.page-body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: center;
+    opacity: 0.5;
+}
+
+#opportunities-view::before {
+    background-image: url("https://static01.nyt.com/images/2021/12/13/sports/13oly-paris-render1/13oly-paris-render1-mobileMasterAt3x.jpg");
+}
+
+#mission-details::before {
+    background-image: url("https://static01.nyt.com/images/2017/09/15/world/15paris-olympics1/15paris-olympics1-superJumbo.jpg");
+}
+
+#my-missions-view::before {
+    background-image: url("https://stillmed.olympics.com/media/Images/News/2022/07/25/Ticketing/2022-07-25-ticketing-inside-01.jpg")
+}
+
+.material-symbols-outlined {
+    font-size: 1.2rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+#opportunities-nav, #applications-nav {
+    padding-bottom: 0;
+}
+
+.list-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mission-pagination-links, #apps-pagination-links {
+    vertical-align: bottom;
+}
+
+#apps-pagination-links li {
+    position: relative;
+}
+
+.page-item.active .page-link {
+    background-color: #003B55;
+    border-color: #003B55;
+}
+
+.page-link {
+    color: #003B55;
+}
+
+#missions-filter-btn, #apps-filter-btn, #apps-filter-reset-btn {
+    position: relative;
+    height: 2rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    padding: 0.25rem 0.5rem;
+    color:  #003B55;
+    background-color: white;
+    border: 1px solid #dee2e6;
+}
+
+#missions-filter-btn:hover, #apps-filter-btn:hover, #apps-filter-reset-btn:hover {
+    text-decoration: none;
+}
+
+#missions-filter-btn:focus, #apps-filter-btn:focus, #apps-filter-reset-btn:focus {
+    text-decoration: none;
+}
+
+#filter-text, #apps-filter-text, #apps-filter-reset-text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    vertical-align: top;
+}
+
+#filter-options {
+    display: none;
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#apps-filter-options {
+    display: none;
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.filter {
+    font-style: italic;
+}
+
+.form-check-inline {
+    display: inline-block;
+    padding-top: calc(0.375rem + 1px);
+}
+
+.form-check-inline .form-check-input {
+    margin-left: 0.3125rem;
+} 
+
+#all-locations {
+    padding-left: 15px;
+}
+
+#all-skills-label, #all-languages-label, #my-skills-label, #my-languages-label, #my-interests-label {
+    padding-left: 0;
+}
+
+#apply-filters-btn {
+    background-color: #003B55;
+}
+
+#reset-btn {
+    background-color: #FCD066;
+}
+
+#current-missions-list, #applications-list {
+    padding-top: 0;
+}
+
+.preview {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #003B55;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.preview.flag {
+    background-color: rgba(140, 155, 149, 0.8);
+} 
+
+.preview.flag p {
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.preview-item {
+    display: inline-block;
+    padding: 0.4rem 1rem 0 1rem;
+    margin-bottom: 0;
+}
+
+.post-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #003B55;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.post-title {
+    display: block;
+}
+
+.post-preview-buttons {
+    padding: 0.75rem;
+    margin-right: 1rem;
+}
+
+.btn.btn-primary.view-mission-details-btn {
+    background-color: #009494;
+}
+
+.btn.btn-primary.close-btn {
+    background-color: #FCD066;
+}
+
+.closed-flag {
+    display: none;
+}
+
+#mission-details, #add-mission, #application-form, #application-details {
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#application {
+    position: relative;
+}
+
+#profile-link-text {
+    position: relative;
+}
+
+#profile-link {
+    color: #003B55;
+}
+
+#profile-link:hover {
+    cursor: pointer;
+}
+
+#mission-details-content {
+    position: relative;
+}
+
+#apply-btn {
+    background-color: #FCD066;
+    border-color: #FCD066;
+}
+
+#duration, #app-deadline {
+    width: 50%;
+}
+
+#application-details {
+    background-color: #FCD066; 
+}
+
+#locations-can-work, #relevant-skills, #relevant-languages {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.appointment {
+    font-weight: bold;
+    color: #009494;
+}
+
+#outcome {
+    font-weight: bold;
+}
+
+.notification {
+    background-color: #FFF2D1;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.notification.unread {
+    background-color: rgba(51, 165, 79, 0.5);
+}
+
+.notification-unread-flag {
+    font-weight: bold;
+}
+
+#register {
+    display: flex;
+}
+
+#register-form {
+    flex: 1 1 70%;
+}
+
+#register-logo-container {
+    flex: 0 1 30%;
+    text-align: center;
+}
+
+#register-logo {
+    max-width: 300px;
+    padding: 3rem;
+    margin: auto;
+}
+
+#update-profile-btn {
+    position: relative;
+}
+
+/* Animation */
+
+@keyframes scroll-left {
+    0%   { 
+        transform: translateX(100%); 		
+    }
+    100% { 
+        transform: translateX(-100%); 
+    }
+}
+
+@keyframes slide {
+    0% {
+        visibility: visible;
+        opacity:0;
+        width: 0%;
+        background-color: #003B55;
+        height: 2px;
+        overflow: hidden;
+    }
+    30% {
+        opacity: 1;
+        height: 2px;
+        background-color: rgb(0, 59, 85);
+        overflow: hidden;
+        width: 100%;
+    }
+    40% {
+        background-color: rgb(0, 59, 85);
+        height: 25%;
+    }
+    50% {
+        height: 50%;
+    }
+    70% {
+        height: 75%;
+    }
+    100% {   
+        background-color: white;
+        height: 100%;
+        visibility: visible;
+    }
+}
+
+.preview {
+    animation-name: slide;   
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    90% { size: 110%; }
+    100% { opacity: 1; }
+}
+
+.post-preview {
+    animation-name: fade-in;   
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards; 
+}
+
+.notification {
+    animation-name: fade-in;   
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; 
+}
+
+/* Mobile view */
+
+@media (max-width: 550px) {
+    .scroll-left p {
+        width: 300%;
+    }
+    .nav-list {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-item {
+        display: block;
+        text-align: center;
+        line-height: 1.5rem;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #F4F5F8;
+    }
+    #nav-toggle-label {
+        display: block;
+        padding: 0.75rem 0 0.75rem 0;
+        line-height: 1.5rem;
+        margin: 0;
+    }
+    #nav-toggle:checked + .nav-list {
+        display: block;
+    }
+    .username {
+        display: none;
+    }
+    #username-box {
+        display: none;
+    }
+    #user-view-btn {
+        color: white;
+        background-color: black;
+        display: block;
+        width: 100%;
+        line-height: 1.5rem;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        border-top: 1px solid #F4F5F8;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+    #my-posts-link, #post-mission-link, #view-opportunities-link, #my-missions-link, #volunteer-news-link {
+        width: 100%;
+    }
+
+    #welcome {
+        text-align: center;
+    }
+    #intro-text {
+        text-align: center;
+    }
+    #volunteer-logo {
+        float: none;
+        padding: 0 0 1.5rem 0;
+    }
+    #days, #hours, #minutes, #seconds {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0.25rem;
+    }
+    .carousel-inner {
+        height: 23rem;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .preview {
+        display: block;
+    }
+    .preview-item {
+        display: block;
+    } 
+    .btn.btn-primary {
+        display: block;
+        margin-top: 0.75rem;
+    }
+    .preview-button-row {
+        display: block;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-bottom: 0.5rem;
+    }
+ }
+
+/* Tablet views */
+
+@media (max-width: 1260px) {
+    #register {
+        display: block;
+    }
+    #register-logo {
+        display: none;
+    }
+    #newsletter-form {
+        display: block;
+    }
+    .newsletter-form-item {
+        display: inline-block;
+        margin: 0 0.75rem 0.75rem 0.75rem;
+    }
+    #sign-up-btn {
+        margin-left: 0;
+    }
+    #thank-you {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #thank-you-text {
+        padding-top: 0;
+    }
+    #tony-estanguet-img-container {
+        display: block;
+        margin: 0 auto 0 auto;
+    }    
+}
+
+@media (max-width: 1260px) and (min-width: 801px) {
+    .scroll-left p {
+        width: 150%;
+    }
+    .preview-button-row {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 551px) {
+    .scroll-left p {
+        width: 200%;
+    }
+    .nav-list {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #menu-section-a {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #menu-section-b {
+        padding-bottom: 0.5rem;
+    }
+    .nav-link {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
+    #user-view-btn {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+    .nav-item {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 551px) {
+    .preview {
+        display: block;
+    }
+    .preview-button-row {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 850px) {    
+    #sign-up-btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 575px) {    
+    .newsletter-form-item * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 951px)  {
+    .carousel-inner {
+        height: 13rem;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 701px)  {
+    .carousel-inner {
+        height: 16.5rem;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 551px)  {
+    .carousel-inner {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .carousel-inner {
+        height: 28rem;
+    }
+}
